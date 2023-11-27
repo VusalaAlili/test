@@ -1,0 +1,608 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/hero_1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+  position: relative;
+}
+
+.container-main {
+  margin: 0 auto;
+}
+
+#header .header {
+  width: 100%;
+  height: 85px;
+  border-bottom: 1px solid rgb(128, 128, 128);
+  position: fixed;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  padding: 24px 0;
+  z-index: 100;
+}
+#header .header .logo a {
+  text-transform: uppercase;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  color: #ffffff;
+}
+#header .header .navlist .home {
+  opacity: 1;
+}
+#header .header .navlist ul {
+  display: flex;
+  flex-flow: row;
+}
+#header .header .navlist ul li {
+  margin-right: 40px;
+}
+#header .header .navlist ul li a {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  line-height: 27.2px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+#header .header .navlist ul li a:hover {
+  opacity: 1;
+}
+#header .header .navlist ul .dropdown-about {
+  margin-right: 40px;
+  position: relative;
+  display: inline-block;
+}
+#header .header .navlist ul .dropdown-about a {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  line-height: 27.2px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+#header .header .navlist ul .dropdown-about .dropdown-about-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+#header .header .navlist ul .dropdown-about .dropdown-about-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+#header .header .navlist ul .dropdown-about .dropdown-about-content a:hover {
+  background-color: #f1f1f1;
+}
+#header .header .navlist ul .dropdown-about:hover {
+  display: block;
+}
+
+.intro {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  z-index: 2;
+}
+.intro h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 57.6px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+}
+.intro .intro-btn {
+  width: 160px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 48px;
+}
+.intro .intro-btn a {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}
+.intro .mouse {
+  bottom: 40px;
+  display: block;
+  width: 25px;
+  height: 45px;
+  border: 2px solid #ffffff;
+  opacity: 0.4;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  text-align: center;
+  transition: 0.3s all ease-in-out;
+}
+
+.about-us {
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+}
+.about-us h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: #007bff;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 64px;
+  margin-top: 80px;
+}
+.about-us .about-group {
+  display: flex;
+  justify-content: center;
+}
+.about-us .about-group img {
+  width: 543px;
+  height: 406px;
+  margin-left: 15px;
+  margin-right: 125px;
+}
+.about-us .about-group .about-right {
+  width: 460px;
+  height: 406px;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+}
+.about-us .about-group .about-right .h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 28px font-weight 500;
+  color: black;
+  line-height: 33.6px;
+  text-align: left;
+  top: 0;
+}
+.about-us .about-group .about-right p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px font-weight 400;
+  color: rgb(128, 128, 128);
+  line-height: 27.2px;
+  text-align: left;
+  margin: 24px 0;
+}
+.about-us .about-group .about-right ul {
+  display: inline-block;
+  margin-bottom: 65px;
+}
+.about-us .about-group .about-right ul li {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(128, 128, 128);
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.about-us .about-group .about-right ul li::before {
+  content: url(../svg/Vector.svg);
+  margin-right: 10px;
+}
+.about-us .about-group .about-right .about-us-btn {
+  width: 160px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  margin-top: -25px;
+}
+.about-us .about-group .about-right .about-us-btn a {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}
+
+.our-team {
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.our-team h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: #007bff;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 64px;
+  margin-top: 80px;
+}
+.our-team p {
+  width: 730px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(128, 128, 128);
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.our-team .team {
+  max-width: 80%;
+  position: static;
+  display: flex;
+  flex-direction: row;
+  row-gap: 30px;
+}
+.our-team .team .team-image img {
+  width: 255px;
+  height: 255px;
+  margin-bottom: 16px;
+}
+.our-team .team .team-image .person {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 19.2px;
+  color: #000;
+  line-height: 23.04px;
+  text-align: left;
+  margin-bottom: 7px;
+}
+.our-team .team .team-image .job {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12.8px;
+  color: #ccc;
+  line-height: 21.76px;
+  text-align: left;
+}
+
+.portfolio {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: #007bff;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 64px;
+  margin-top: 80px;
+}
+.portfolio .portfolio-btn {
+  margin-top: 37px;
+  margin-bottom: 53px;
+}
+.portfolio .portfolio-btn .btn-all {
+  margin: 5px;
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 19.2px;
+  cursor: pointer;
+}
+.portfolio .portfolio-btn .btn-web {
+  margin: 5px;
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 19.2px;
+  cursor: pointer;
+}
+.portfolio .portfolio-btn .btn-design {
+  margin: 5px;
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 19.2px;
+  cursor: pointer;
+}
+.portfolio .portfolio-btn .btn-brand {
+  margin: 5px;
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 19.2px;
+  cursor: pointer;
+}
+.portfolio .row {
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.portfolio .row .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.portfolio .row .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.contact-us {
+  width: 100%;
+  background-color: rgb(248, 249, 250);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  color: #007bff;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 64px;
+  margin-top: 80px;
+}
+.contact-us .main {
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+.contact-us .main .location {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.contact-us .main .location span img {
+  margin-bottom: 12px;
+}
+.contact-us .main .location p {
+  width: 349px;
+  color: rgb(128, 128, 128);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.contact-us .main .phone {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.contact-us .main .phone span img {
+  margin-bottom: 12px;
+}
+.contact-us .main .phone a {
+  width: 379px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #007bff;
+  margin-bottom: 45px;
+}
+.contact-us .main .mail {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.contact-us .main .mail span img {
+  margin-bottom: 12px;
+}
+.contact-us .main .mail a {
+  width: 379px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #007bff;
+  margin-bottom: 45px;
+}
+.contact-us .contact-bottom {
+  width: 1110px;
+  height: 750px;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+}
+.contact-us .contact-bottom h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px font-weight 500;
+  color: black;
+  line-height: 28px;
+  text-align: left;
+  margin: 48px;
+}
+.contact-us .contact-bottom .form .name-surname {
+  display: flex;
+  flex-flow: row;
+}
+.contact-us .contact-bottom .form .name-surname .name p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px font-weight 400;
+  color: black;
+  line-height: 27.2px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.contact-us .contact-bottom .form .name-surname .name input {
+  width: 492px;
+  height: 43px;
+  margin: 0px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Work Sans", sans-serif;
+  border-radius: 30px;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  margin-bottom: 16px;
+}
+.contact-us .contact-bottom .form .name-surname .surname p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px font-weight 400;
+  color: black;
+  line-height: 27.2px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.contact-us .contact-bottom .form .name-surname .surname input {
+  width: 492px;
+  height: 43px;
+  margin: 0px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Work Sans", sans-serif;
+  border-radius: 30px;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  margin-bottom: 16px;
+}
+.contact-us .contact-bottom .form .e-mail p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px font-weight 400;
+  color: black;
+  line-height: 27.2px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.contact-us .contact-bottom .form .e-mail input {
+  width: 1014px;
+  height: 43px;
+  margin: 0px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Work Sans", sans-serif;
+  border-radius: 30px;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  margin-bottom: 16px;
+}
+.contact-us .contact-bottom .form .subject p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px font-weight 400;
+  color: black;
+  line-height: 27.2px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.contact-us .contact-bottom .form .subject input {
+  width: 1014px;
+  height: 43px;
+  margin: 0px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Work Sans", sans-serif;
+  border-radius: 30px;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  margin-bottom: 16px;
+}
+.contact-us .contact-bottom .form .message p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px font-weight 400;
+  color: black;
+  line-height: 27.2px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.contact-us .contact-bottom .form .message textarea {
+  width: 1014px;
+  height: 182px;
+  margin: 0px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Work Sans", sans-serif;
+  border-radius: 30px;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #ced4da;
+  margin-bottom: 16px;
+}
+.contact-us .contact-bottom .form .submitt {
+  width: 173px;
+  height: 46px;
+  padding: 10px 0;
+  border-radius: 30px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,124 @@
+@mixin btn{
+    width: 160px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    a{
+        font-family: $font-family-work;
+        font-weight: 400;
+        line-height: 24px;
+        color: #fff; 
+    }
+}
+
+@mixin align-center{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@mixin flex{
+    display: flex;
+    flex-flow: column;
+}
+
+@mixin head{
+    font-family: $font-family-work;
+        font-weight: 900;
+        font-size: 40px;
+        color: #007bff;
+        line-height: 48px;
+        text-align: center;
+        margin-bottom: 64px;
+        margin-top: 80px;
+}
+
+@mixin photo-size{
+    width: 543px;
+    height: 406px;
+    margin-left: 15px;
+    margin-right: 125px;
+}
+
+
+@mixin text{
+    font-family: $font-family-work;
+    font-size: 16px
+    font-weight 400;
+    color: rgb(128, 128, 128);
+    line-height: 27.2px;
+    text-align: left;
+    margin: 24px 0;
+}
+
+@mixin person-info {
+    font-family:
+      $font-family-work;
+      font-weight: 400;
+      font-size: 19.2px;
+      color: #000;
+      line-height: 23.04px;
+      text-align: left;
+      margin-bottom: 7px;
+}
+
+@mixin job{
+    font-family:
+      $font-family-work;
+      font-weight: 400;
+      font-size: 12.8px;
+      color: #ccc;
+      line-height: 21.76px;
+      text-align: left;
+}
+
+@mixin team-img{
+    width: 255px;
+    height: 255px;
+    margin-bottom: 16px;
+}
+
+@mixin portfolio-btnn{
+    margin: 5px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-family: $font-family-work;
+        font-weight: 400;
+        font-size: 12.8px;
+        line-height: 19.20px;
+        cursor: pointer;
+}
+
+@mixin contact-p{
+    font-family: $font-family-work;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 27.2px;
+          text-align: center;
+          margin-bottom: 15px;
+}
+
+@mixin form-p{
+    font-family: $font-family-work;
+      font-size: 16px font-weight 400;
+      color: $black-color;
+      line-height: 27.2px;
+      text-align: left;
+      margin-bottom: 8px;
+}
+@mixin form-input{
+          margin: 0px 12px;
+          font-size: 16px;
+          line-height: 1.5;
+          font-family: $font-family-work;
+          border-radius: 30px;
+          padding: 0.375rem 0.75rem;
+          border: 1px solid #ced4da;
+          margin-bottom: 16px;
+}
